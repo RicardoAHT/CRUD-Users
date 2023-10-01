@@ -83,8 +83,6 @@
     flex-direction: column;
     gap: 0.3rem;  
 }
-.userCard__ul__li{
-}
 .userCard__ul__li__span1{
     font-weight: 500;
 }
