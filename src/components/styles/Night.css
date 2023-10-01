@@ -1,0 +1,40 @@
+:root {
+    --color-darkBlue: #1a0951db;
+    --color-orange: #F0AC4A;
+    --color-blackBlue: #05082f;
+    --color-whitePurple: #b285ad;
+    --color-purple: #5a1dc5;
+}
+/*!Main*/
+.app__main__night{
+    background-image: url("https://cdn.computerhoy.com/sites/navi.axelspringer.es/public/media/image/2015/09/120887-mejores-accesorios-fotografia-nocturna-ebay.jpg?tf=3840x");
+}
+/*! Nav*/
+.navBar__night{
+    background-color: var(--color-blackBlue);
+    color: ghostwhite;
+}
+.navBar__h1__night{
+    color: rgba(248, 248, 255, 0.648);
+}
+.open__form__night{
+    background-color: var(--color-purple);
+    color: var(--color-darkBlue);
+}
+.open__form__night:hover{
+    box-shadow: var(--color-whitePurple) 1px 1px 4px;
+}
+.open__form__icon__night{
+    font-size: 1.1rem;
+}
+/*! Footer */
+.footer__night{
+    background-color: var(--color-blackBlue) ;
+    display: flex;
+}
+.footer__night a{
+    color: var(--color-purple);
+}
+.footer__night a:hover{
+    color: var(--color-orange);
+}

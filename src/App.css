@@ -1,0 +1,151 @@
+:root {
+    --color-brown: #A3793B;
+    --color-orange: #F0AC4A;
+    --color-blue: #3E49F0;
+    --color-gold: #A3A21A;
+    --color-yellow: #F0EF32;
+}
+/*! NavBar*/
+.navBar{
+    background-color: #3E49F0 ;
+    color: ghostwhite;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 2.5rem;
+}
+.navBar__h1{
+    font-size: 1.7rem;
+    text-align: center;
+    font-family: 'Mooli', sans-serif;
+}
+.open__form{
+    display: flex;
+    align-items: center;
+    background-color: var(--color-yellow);
+    color: var(--color-brown);
+    font-weight: bold;
+    transition: all 200ms;
+    border-radius: 0.3rem;
+    gap: 0.2rem;
+    padding: 0.3rem;
+}
+.open__form:hover{
+    transform: scale(1.05);
+    box-shadow: var(--color-gold) 1px 1px 2px;
+}
+.open__form__icon{
+    font-size: 1rem;
+}
+/*! Main*/
+.app__main{
+    background-image: url("https://www.blogdelfotografo.com/wp-content/uploads/2020/04/fotografo-paisajes.jpg");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    overflow: auto;
+    padding: 2rem;
+}
+/*! UserCard*/
+.userCard__container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 2rem;
+}
+.userCard{
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    justify-content: center;
+    border-radius: 0.3rem ;
+    background-color: rgba(248, 248, 255, 0.656);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 5px ghostwhite, 0 0 10px ghostwhite, 0 0 10px ghostwhite  ;
+    gap: 0.3rem;
+    margin: 1rem;
+    padding: 1rem;
+    width: 18rem;
+    height: 10rem;
+    line-height: 1.3;
+}
+.userCard__h3{
+    text-shadow: rgba(0, 0, 0, 0.494) 1px 1px 1px;
+}
+.userCard__ul{
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;  
+}
+.userCard__ul__li{
+}
+.userCard__ul__li__span1{
+    font-weight: 500;
+}
+.userCard__ul__li__span2{
+    font-weight: 300;
+}
+.userCard__div{
+    display: flex;
+    justify-content: center;
+    margin-top: 0.7rem;
+    width: 100%;
+    gap: 1rem;
+}
+.userCard__button{
+    background-color: var(--color-orange);
+    color: ghostwhite;
+    padding: 0.3rem;
+    border-radius: 0.3rem;
+}
+.userCard__button:hover{
+    box-shadow: 0 0 5px ghostwhite, 0 0 10px ghostwhite, 0 0 10px ghostwhite  ;
+    transform: scale(1.03);
+}
+.userCard__button{
+    display: flex;
+    justify-content: center;
+    font-weight: 500;
+    width: 5rem;
+}
+/*! Footer*/
+.footer{
+    background-color: var(--color-blue) ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 30vh;
+    margin-top: 0rem;
+}
+.footer__ul{
+    display: flex;
+    gap: 1.5rem;
+    font-size: 1.9rem;
+    margin: 4rem; 
+}
+.footer a{
+    color: var(--color-orange);
+    transition: all 300ms;
+}
+.footer a:hover{
+    transform: scale(1.1);
+    color: var(--color-orange);
+}
+.pagination__container{
+    display: flex;
+    justify-content: center;
+}
+.pagination button{
+    background-color: rgba(0, 0, 0, 0.653);
+    color: ghostwhite;
+}
+.pagination button:hover{
+    box-shadow: 0 0 5px ghostwhite, 0 0 10px ghostwhite, 0 0 10px ghostwhite ;
+}
