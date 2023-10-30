@@ -17,7 +17,7 @@ const FormUser = ({createUser, infoUpdate, updateUser, setInfoUpdate, closeForm,
   const submit = data => {
     if(infoUpdate){
       updateUser("/users", infoUpdate.id, data)
-      setInfoUpdate()
+      setInfoUpdate()     
     }else{
       createUser("/users", data)}
       reset({
@@ -27,16 +27,16 @@ const FormUser = ({createUser, infoUpdate, updateUser, setInfoUpdate, closeForm,
         last_name:"",
         birthday:""
       })
-    }
+  }
 
   return (
     <div className={`formUser__container ${closeForm && "close__form"}`} onClick={handleCloseForm}>
-      <form className='formUser' onSubmit={handleSubmit(submit)} onClick={event => event.stopPropagation()}>
+      <form className='formUser' onSubmit={handleSubmit(submit)} onClick={event => event.stopPropagation()} id='form'>
         <h2 className='formUser__h2'>{infoUpdate ? "Update User" :"New User"}</h2>
         <div className='formUser__close' onClick={handleCloseForm}>X</div>
         <div className='formUser__div'>
           <label className='formUser__div__label' htmlFor="email">Email: </label>
-          <input className='formUser__div__input' {...register("email")} type="email" id='email' />
+          <input className='formUser__div__input' {...register("email")} type="email" id='email' autoComplete='userEmail' />
         </div>
         <div className='formUser__div'>
           <label className='formUser__div__label' htmlFor="password">Password: </label>
@@ -44,7 +44,7 @@ const FormUser = ({createUser, infoUpdate, updateUser, setInfoUpdate, closeForm,
         </div>
         <div className='formUser__div'>
           <label className='formUser__div__label' htmlFor="first_name">Name: </label>
-          <input className='formUser__div__input' {...register("first_name")} type="text" id='first_name' />
+          <input className='formUser__div__input' {...register("first_name")} type="text" id='first_name' autoComplete='userName' />
         </div>
         <div className='formUser__div'>
           <label className='formUser__div__label' htmlFor="last_name">LastName: </label>

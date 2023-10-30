@@ -9,7 +9,8 @@ import { Box, Pagination } from "@mui/material";
 
 function App() {
 
-  const baseUrl = "https://users-crud.academlo.tech" 
+  const baseUrl = "https://crud-users-backend-dev-xfhd.3.us-1.fl0.io"
+  //const baseUrl = "http://localhost:8080"
   const [closeForm, setCloseForm] = useState(true)
   const [users, getUsers, createUser, deleteUser, updateUser] = useFetch(baseUrl, setCloseForm)
   const [infoUpdate, setInfoUpdate] = useState()

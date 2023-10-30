@@ -32,7 +32,8 @@ const useFetch = (baseUrl, callback) => {
         axios.patch(url, data)
             .then(response => {
                 setInfoApi(infoApi.map(element => id === element.id ? response.data : element) )
-                callback(true) 
+                callback(true)
+                
             })
             .catch(error => console.log(error))
     }
